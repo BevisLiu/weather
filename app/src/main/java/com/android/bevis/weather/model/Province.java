@@ -1,7 +1,7 @@
 package com.android.bevis.weather.model;
 
 /**
- * Created by 47984 on 2016/5/25.
+ * Created by bevis on 2016/5/25.
  */
 public class Province {
     

@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 /**
- * Created by 47984 on 2016/5/25.
+ * Created by bevis on 2016/5/25.
  */
 public class CoolWeatherOpenHelper extends SQLiteOpenHelper{
 
@@ -29,7 +29,7 @@ public class CoolWeatherOpenHelper extends SQLiteOpenHelper{
     /**
      * County table
      */
-    public static final String CREATE_County = "create table County ("
+    public static final String CREATE_COUNTY = "create table County ("
             + "id integer primary key autoincrement, "
             + "county_name text, "
             + "county_code text, "
@@ -44,7 +44,7 @@ public class CoolWeatherOpenHelper extends SQLiteOpenHelper{
     public void onCreate(SQLiteDatabase sqLiteDatabase) {
         
         sqLiteDatabase.execSQL(CREATE_CITY);
-        sqLiteDatabase.execSQL(CREATE_County);
+        sqLiteDatabase.execSQL(CREATE_COUNTY);
         sqLiteDatabase.execSQL(CREATE_PROVINCE);
     }
 
